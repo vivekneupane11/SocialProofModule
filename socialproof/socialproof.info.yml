@@ -1,0 +1,7 @@
+name: socialproof
+type: module
+description: 'Social Proof block provider'
+core: 8.x
+package: Other
+dependencies:
+  - block

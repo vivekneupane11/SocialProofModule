@@ -1,0 +1,9 @@
+socialproof:
+  version: 1.x
+  css:
+    theme:
+      css/socialproof.css: {}
+  js:
+    js/socialproof.js: {}
+  dependencies:
+    - core/jquery
