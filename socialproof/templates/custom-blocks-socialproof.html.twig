@@ -1,14 +1,20 @@
 
-<div{{ attributes }}>
 
-<img src="https://sleeknote.com/wp-content/uploads/2018/12/Seray-120x120.jpg" alt="LOGO">
+<input type="hidden" value={{count}} id="count" >
+<div {{ attributes }} id="mainsp">
+<div id="socialproofcontent">
+<div id="allmessagesdiv">
+{% for key,data in spmessage %}
+<div id="social-block-{{key}}" class="socialproofdiv" >
+ 						<img src="{{spmessageimg[key]}}" alt="LOGO">
+ 							<p>
+              <span class="socialproof-text">
+ 							{{ data|raw }}
+ 							</span>
+						 </p>
+</div>
 
-  <p><span class="socialproof-text">{% trans %}
- <strong>{{ year }}</strong> people view this post this week.
-  {% endtrans %}
-  </span>
-
-
-
- </p>
+   {% endfor %}
+   </div>
+</div>
 </div>

@@ -9,7 +9,10 @@ function socialproof_theme($existing, $type, $theme, $path) {
     'custom_blocks_socialproof' => [
       'variables' => [
         'attributes' => [],
-        'year' => '',
+        'spmessage' => [],
+        'spmessageimg' => [],
+        'count'=>'',
+
       ],
     ],
   ];
