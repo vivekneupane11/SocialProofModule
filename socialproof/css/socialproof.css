@@ -1,56 +1,105 @@
-.socialproof{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  text-align: center;
-  width: 35%;
-  background: #ffffff;  font-weight: 400;
-  -webkit-box-shadow: 0 5px 20px 0 rgba(84, 106, 157, 0.20);
-  -moz-box-shadow: 0 5px 20px 0 rgba(84, 106, 157, 0.20);
-  box-shadow: 0 5px 20px 0 rgba(84, 106, 157, 0.20);
-  position: fixed;
-  bottom: 100;
-  border-radius: 6px;
-  top: 87vh;
-      z-index: 1000;
-      left: 50%;
+
+
+.socialproof {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-weight: bold;
+    text-align: center;
+    width: 330px;
+    height: 95px;
+    background: #ffffff;
+    font-weight: 400;
+    -webkit-box-shadow: 0 5px 20px 0 rgba(84, 106, 157, 0.20);
+    -moz-box-shadow: 0 5px 20px 0 rgba(84, 106, 157, 0.20);
+    box-shadow: 0 5px 20px 0 rgba(84, 106, 157, 0.20);
+    position: fixed;
+      padding: 1px 5px;
+    bottom: 100;
+    border-radius: 50px;
+    top: 85vh;
+    z-index: 1000;
+    left: 50%;
     transform: translate(-50%, 0);
     overflow: hidden;
     opacity: 0;
 }
-.socialproof p{
-  margin:0;
-  padding-left: 10px;
-  flex-basis: 75%;
-  color:#627D98;
-  font-size: 13px;
-  font-weight: bold;
-  color:#2d2d2d;
+
+
+#socialproofcontent {
+    width: 100%;
+    height: 109px;
+}
+.socialproofdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top:4px;
+
 }
 
-.socialproof img{
-  flex-basis: 22%;
-  height: 75px;
-background: #fff;
-box-shadow: -15px -15px 15px rgba(255,255,255,0.5),
-            4px 4px 15px rgba(0,0,0,0.05);
--webkit-box-shadow:-15px -15px 15px rgba(255,255,255,0.5),
-            4px 4px 15px rgba(0,0,0,0.05);
--moz-box-shadow:-15px -15px 15px rgba(255,255,255,0.5),
-            4px 4px 15px rgba(0,0,0,0.05);
-            border-top-left-radius: 6px;
-            border-bottom-left-radius: 6px;
+.socialproof img {
+
+    height: 85px;
+    width: 85px;
+    margin-bottom:  1px;
+    background: #fff;
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.5), 4px 4px 15px rgba(0,0,0,0.05);
+    -webkit-box-shadow: -15px -15px 15px rgba(255,255,255,0.5), 4px 4px 15px rgba(0,0,0,0.05);
+    -moz-box-shadow: -15px -15px 15px rgba(255,255,255,0.5), 4px 4px 15px rgba(0,0,0,0.05);
+    border-radius: 50%;
+
 }
 
-.socialproofdiv{
-  display:flex;
-  flex-direction: row;
-  justify-content: flex-start;
+.socialproof p {
+    margin: 0;
+    overflow: hidden;
+    color: #627D98;
+        height: 78px;
+    padding-left: 6px;
+    font-size: 14px;
+  display: flex;
+  justify-content: center;
   align-items: center;
+    line-height: 1.5;
+    color: #808080;
 
+}
+
+.closebutton{
+
+      background: none;
+      border: none;
+      height: 20px;
+      color: #dbd5d3;
+      width: 20px;
+      margin-right: 2px;
+      outline: none;
+}
+.closebutton:hover{
+  color:black;
+  transform: scale(1.05);
+  transition: 1s all ease-in-out;
+}
+
+.closetext{
+  margin:0;
+  padding:5px;
+}
+@media only screen and (max-width: 768px) {
+.socialproof{
+  height:70px;
+  top: 82vh;
 }
 #socialproofcontent{
-  width:100%;
-height: 75px;
+  height: 77px;
+}
+.socialproof img {
+  height:60px;
+  width: 60px;
+}
+.socialproof p {
+line-height: 1.2;
+}
 }
