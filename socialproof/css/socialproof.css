@@ -39,6 +39,7 @@
 
 }
 
+
 .socialproof img {
 
     height: 85px;
@@ -102,4 +103,10 @@
 .socialproof p {
 line-height: 1.2;
 }
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 1198px) {
+  #socialproofcontent{
+    height: 93px;
+  }
 }

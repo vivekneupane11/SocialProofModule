@@ -1,10 +1,11 @@
 let count = 0;
 let timer = 0;
-var startTime = new Date().getTime();
-let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
-window.onload = function() {
-  jQuery('#mainsp').delay(4000).animate({opacity:1},3000);
 
+window.onload = function() {
+  let isSmallDesktop = window.matchMedia("only screen and (max-width: 1198px)").matches;
+  let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+
+  jQuery('#mainsp').delay(4000).animate({opacity:1},3000);
   jQuery('.closebutton').click(function(){
       jQuery('#mainsp').animate({opacity:0,top:'100vh'},1000);
  jQuery('#allmessagesdiv').delay(1000).animate({'marginTop':'0px'});
@@ -18,10 +19,18 @@ function showmessage(){
  if (isMobile) {
    jQuery('#allmessagesdiv').delay(1000).animate({'marginTop':'-=82px'},2000);
    jQuery('#mainsp').delay(2000).animate({opacity:1,top:'82vh'},1000);
+   isSmallDesktop = false;
+
+ }
+ else if (isSmallDesktop) {
+   jQuery('#allmessagesdiv').delay(1000).animate({'marginTop':'-=90px'},2000);
+   jQuery('#mainsp').delay(2000).animate({opacity:1,top:'82vh'},1000);
+
  }
  else{
    jQuery('#allmessagesdiv').delay(1000).animate({'marginTop':'-=122px'},2000);
    jQuery('#mainsp').delay(2000).animate({opacity:1,top:'80vh'},1000);
+
  }
 
       count++;
@@ -40,4 +49,5 @@ function showmessage(){
 
 }
   var interval = setInterval(showmessage,10000);
+
 }
