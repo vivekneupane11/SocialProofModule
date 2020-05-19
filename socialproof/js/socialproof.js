@@ -28,7 +28,7 @@ function showmessage(){
 
  }
  else{
-   jQuery('#allmessagesdiv').delay(1000).animate({'marginTop':'-=122px'},2000);
+   jQuery('#allmessagesdiv').delay(1000).animate({'marginTop':'-=90px'},2000);
    jQuery('#mainsp').delay(2000).animate({opacity:1,top:'80vh'},1000);
 
  }
